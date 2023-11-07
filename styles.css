@@ -139,7 +139,7 @@ align-items: flex-end;
 .home > .homeRight > h1{
   font-size: 4vmax;
   text-align: center;
-  color:#050504;
+  color:white;
 
 }
 .home > .homeRight > h1 > span{
@@ -217,10 +217,11 @@ align-items: flex-end;
   justify-content: space-between;
   box-shadow: 5px 5px #888888;
   transition: all ease 0.2 linear;
-  background-color: rgba(158, 173, 252, 1);
+  /* background-color: rgba(158, 173, 252, 1); */
   cursor: pointer;
-  color: #fff;
+  /* color: #fff; */
   padding-bottom: 5px;
+
   margin: 5px;
 }
 
@@ -231,9 +232,11 @@ align-items: flex-end;
 .product-container > .product>img{
   width:250px;
   border-radius: 7px 7px 0px 0px;
+  border-bottom: 1px solid black;
   
   
 }
+
 
 .product-container > .product>p{
   font-size: 20px;
