@@ -148,10 +148,10 @@ align-items: flex-end;
 }
 .homeRight > p{
   width: 80%;
-  /* margin-top: -100px; */
   font-size: 18px;
   font-family:sans-serif;
   text-align: justify;
+  color: white;
 }
 
 .homeRight > button{
@@ -214,10 +214,13 @@ align-items: flex-end;
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: 5px 5px #888888;
   transition: all ease 0.2 linear;
+  background-color: rgba(158, 173, 252, 1);
   cursor: pointer;
+  color: #fff;
+  padding-bottom: 5px;
   margin: 5px;
 }
 
@@ -227,8 +230,7 @@ align-items: flex-end;
 
 .product-container > .product>img{
   width:250px;
-  /* border: 1px solid black; */
-  border-radius: 7px ;
+  border-radius: 7px 7px 0px 0px;
   
   
 }
