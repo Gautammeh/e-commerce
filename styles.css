@@ -441,7 +441,7 @@ color : rgb(33, 60, 199);
     object-fit: cover ;
   }
   #products > h1{
-    width: 30%;
+    width: 100%;
   }
 
   #footer{
