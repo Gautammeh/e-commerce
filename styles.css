@@ -455,6 +455,10 @@ color : rgb(33, 60, 199);
     width: 100%;
   }
 
+  #footer > .leftFooter> #contact > form > .fbtns > input{
+    width: 30%;
+  }
+
   
 
 
