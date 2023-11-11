@@ -4,7 +4,10 @@
   box-sizing: border-box; 
   scroll-behavior:smooth;
 }
-
+body{
+  background-color: #edecf8;
+  color: black;
+}
 nav{
   /* border: 1px solid red; */
   display: flex;
@@ -104,7 +107,7 @@ nav >.right > i{
   /* border: 1px solid black; */
   height: 90vh;
   display: flex;
-  background-color: rgba(158, 173, 252, 1);
+  background-color: #7461EF;
 }
 
 .home > .homeLeft, .homeRight{
@@ -171,8 +174,8 @@ align-items: flex-end;
   border-radius: 40px;
   font-size: 100%;
   cursor: pointer;
-  color: white;
-  background-color: rgb(33, 33, 226);
+  /* color: white; */
+  background-color: #C2B9F8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,6 +185,7 @@ align-items: flex-end;
 .homeRight > button:hover{
   
   background-color: rgb(65, 65, 240);
+  color: white;
 
 }
 #dropdown{
@@ -276,7 +280,7 @@ color : rgb(33, 60, 199);
   justify-content: space-between;
   box-shadow: 5px 5px #888888;
   transition: all ease 0.2 linear;
-  /* background-color: rgba(158, 173, 252, 1); */
+  background-color: #C2B9F8;
   cursor: pointer;
   /* color: #fff; */
   padding-bottom: 5px;
@@ -292,6 +296,7 @@ color : rgb(33, 60, 199);
   width:250px;
   border-radius: 7px 7px 0px 0px;
   border-bottom: 1px solid black;
+  background-color: white;
   
   
 }
