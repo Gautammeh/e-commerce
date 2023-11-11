@@ -312,7 +312,7 @@ color : rgb(33, 60, 199);
 
 #footer > .leftFooter{
   width: 70%;
-  border: 1px solid white;
+  border-right: 1px solid white;
   /* display: flex; */
 }
 #footer > .leftFooter> h2{
@@ -363,7 +363,7 @@ color : rgb(33, 60, 199);
 }
 #footer > .rightFooter{
   width: 30%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   color: white;
@@ -457,6 +457,13 @@ color : rgb(33, 60, 199);
 
   #footer > .leftFooter> #contact > form > .fbtns > input{
     width: 30%;
+  }
+  #footer > .rightFooter{
+    border-top: 1px solid white;
+  }
+
+  #footer > .leftFooter{
+    border: none;
   }
 
   
