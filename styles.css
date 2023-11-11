@@ -193,6 +193,7 @@ align-items: flex-end;
   position: absolute;
   flex-direction: column;
   width: 100%;
+    border-top: 1px solid black;
   top: 50px;
   /* border-radius: 8px; */
   background-color: white;
