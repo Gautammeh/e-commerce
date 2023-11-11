@@ -1,6 +1,8 @@
 const hamburger = document.getElementById("hamburger");
 const dropdown = document.getElementById("dropdown");
 
+
+
 let val = 0
 hamburger.addEventListener("click",()=>{
 

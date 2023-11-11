@@ -81,10 +81,16 @@ align-self:stretch;
 nav >.right > i{
   font-size: 25px;
   cursor: pointer;
+  
+}
+#cart, #user{
+  transition: color 0.3s ease-in-out;
+
 }
 #cart:hover{
   color: crimson;
   font-weight: bold;
+  
 }
 #user:hover{
   color: blue;
@@ -118,12 +124,16 @@ align-items: flex-end;
 .home > .homeLeft > img{
   width: 100%;
   height: 75%;
-  mix-blend-mode:darken;
+  /* mix-blend-mode:
+  ; */
+  filter: brightness(150%);
+  
   
 }
 .home > .homeRight > img{
   /* mix-blend-mode:n; */
   border-radius: 25px;
+  filter: brightness(110%);
 }
 .home > .homeRight{
 
@@ -166,6 +176,7 @@ align-items: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:  background-color 0.5s ease-in-out;
 }
 
 .homeRight > button:hover{
@@ -173,24 +184,19 @@ align-items: flex-end;
   background-color: rgb(65, 65, 240);
 
 }
-
-
 #dropdown{
-  border: 1px solid red;
   display: none;
   position: absolute;
-  right: 2rem;
-  /* display: flex; */
   flex-direction: column;
-  width: 200px;
-  top: 55px;
-  border-radius: 8px;
- 
-  background-color: rgba(255, 255, 255, 0.425);
+  width: 100%;
+  top: 50px;
+  /* border-radius: 8px; */
+  background-color: white;
   backdrop-filter: blur(10px);
   padding: 10px 0px;
-  transition: height 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
+
 #dropdown > .first{
   display: flex;
   flex-direction: column;
@@ -224,6 +230,9 @@ align-items: flex-end;
   border-bottom: 3px solid crimson;
 color : rgb(33, 60, 199);
 }
+
+
+
 /* <--------------------------> */
 
 
@@ -327,13 +336,19 @@ color : rgb(33, 60, 199);
   width: 90%;
   font-size: 20px;
 }
+#footer > .leftFooter> #contact > form > .fbtns {
+  display: flex;
+  /* border: 1px solid red; */
+  height: 40px;
+  width: 90%;
 
-#footer > .leftFooter> #contact > form >input:last-child{
+}
+#footer > .leftFooter> #contact > form > .fbtns > input{
   width: 20%;
   border: none;
+  margin: 0px 10px 0 0;
   border-radius: 40px;
   font-size: 18px;
-  /* margin-top: -100px; */
   cursor: pointer;
   color: white;
   background-color: rgb(33, 33, 226);
@@ -341,8 +356,9 @@ color : rgb(33, 60, 199);
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
 }
-#footer > .leftFooter> #contact > form >input:last-child:hover{
+#footer > .leftFooter> #contact > form > .fbtns > input:hover{
   background-color: rgb(109, 109, 220);
 }
 #footer > .rightFooter{
@@ -364,10 +380,20 @@ color : rgb(33, 60, 199);
   cursor: pointer;
 }
 
-#footer > .rightFooter > a >i{
-  color:white;
+#footer > .rightFooter > a >#insta{
+  color:red;
   margin-right: 5px;
 }
+#footer > .rightFooter > a >#FB{
+  color:blue;
+  margin-right: 5px;
+}
+#footer > .rightFooter > a >#Wt{
+  color:green;
+  margin-right: 5px;
+}
+
+
 
 
 @media all and (max-width:501px){
@@ -389,16 +415,19 @@ color : rgb(33, 60, 199);
 
   .home{
     flex-direction: column-reverse;
-    height:110vh;
+    height:120vh;
     display: flex;
   }
   .home > .homeRight{
     /* border: 1px solid black; */
     justify-content: space-around;
-    height: 60vh;
+    height: 70vh;
 
   } 
-
+  .homeRight > button{
+    width: 48%;
+    font-size: 90%;
+  }
   .home > .homeLeft {
       /* border: 1px solid black; */
     height: 50vh;
@@ -411,6 +440,24 @@ color : rgb(33, 60, 199);
     align-self: flex-end;
     object-fit: cover ;
   }
+  #products > h1{
+    width: 30%;
+  }
+
+  #footer{
+    display: block;
+  }
+
+  #footer > .leftFooter {
+    width: 100%;
+  }
+  #footer > .rightFooter {
+    width: 100%;
+  }
+
+  
+
 
   
 }
+
